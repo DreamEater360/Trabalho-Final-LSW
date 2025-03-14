@@ -1,0 +1,9 @@
+{
+    "users": [
+        {
+            "nome": "root",
+            "senha": "admin10",
+            "storage": "D:archives/local-storage/usr/root/"
+        }
+    ]
+}

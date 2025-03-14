@@ -1,0 +1,346 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* header components */
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    color: black;
+    padding: 0px 10px 0px 10px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+button{
+    background:none;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+li{
+    display: block;
+    margin: auto;
+
+}
+
+#title-show {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+img{
+    width: 25px;
+    height: 25px;
+
+}
+
+/* display */
+
+main{
+    height: calc(90vh - 80px);
+    width: 100vw;
+    display: flex;
+    background-color:rgb(92, 92, 92);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+/* taskbar components */
+nav{
+    display: flex;
+    height: 80px;
+    width: 100vw;
+    background-color:lightblue;
+}
+
+nav > button{
+    display: block;
+    margin: auto 10px;
+    border: none;
+}
+
+/* Components */
+
+ /* --settings-- */
+#config{
+    height: 80%;
+    width: 50%;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 8px;
+    border: 3px solid gainsboro;
+    padding: 3px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#background-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#background-text{
+    font-size: 1.5em;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 3px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+#background-range-list{
+    display:grid;
+    border: 2px solid black;
+    padding: 3px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+#background-red-range{
+    background: red;
+}
+
+#background-green-range{
+    background: green;
+}
+
+#background-blue-range{
+    background: blue;
+}
+
+/* --calculator */
+#calculator{
+    height: 90%;
+    width: 40%;
+    margin: auto;
+    padding: 1% 0%;
+    background-color: black;
+    border-radius: 8px;
+    transition: transform 1s ease;
+
+}
+
+#display-calculator{
+    height: 20%;
+    width: 100%;
+    text-align: end;
+}
+
+#up-display-calculator{
+    height: 60%;
+    width: 95%;
+    background-color: gray;
+    margin: auto;
+    border-radius: 6px 6px 0px 0px;
+    font-size: 2em;
+}
+
+#down-display-calculator{
+    height: 40%;
+    width: 95%;
+    background-color:darkgrey;
+    margin: auto;
+    border-radius: 0px 0px 6px 6px;
+    font-size: 1.5em;
+
+}
+
+#buttons-calculator{
+    height: 80%;
+    width: 95%;
+    background-color:rgb(39, 39, 39);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#buttons-calculator > button{
+    font-size: 2em;
+}
+
+.buttons-calculator{
+    background-color: aliceblue;
+}
+
+.buttons-op-calculator{
+    background-color: orange;
+}
+
+/* --appbar */
+
+#appbar{
+    min-height: 300px;
+    min-width: 200px;
+    max-width: 25%;
+    background-color: rgb(187, 187, 187);
+    display: block;
+    top: calc(0px + 50px);
+}
+
+#appbar > ul{
+    display: list-item;
+    padding: 20px;
+    width: 200px;
+    margin: 10px auto 0px auto;
+}
+
+#appbar li{
+    border-bottom: 2px solid white;
+    margin: 10px;
+}
+
+#appbar button{
+    width:100%;
+    text-align: left;
+    font-size: 1.2em;
+    border: 0;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#appbar button:hover{
+    color: cornsilk;
+}
+
+/* --explorer */
+#explorer {
+    width: 80%;
+    height: 90%;
+    background-color: antiquewhite;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#up-menu-explorer {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(160, 163, 163);
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+.item-file {
+    width: 100px;
+    height: 100px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 10px 0px 10px;
+}
+
+.item-file img {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+}
+
+/* --shell */
+
+#shell{
+    height: 90%;
+    width: 70%;
+    font-family: 'hack';
+    background-color: black;
+    margin: auto;
+    border: 4px solid green;
+    border-radius: 8px;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+#shell label{
+    color:aqua;
+
+}
+
+#shell input{
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    outline: none;
+    color: aliceblue;
+    font-size: 12pt;
+}
+
+#shell #files{
+    color: greenyellow;
+}
+
+#output-shell{
+    color:aliceblue;
+    font-size: 12pt;
+}
+
+#shell #efile{
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    color: aliceblue;
+    outline: none;
+    margin: auto;
+    resize: none;
+    cursor:text;
+    border: none;
+}
+
+#shell #key-list-efile{
+    margin: 0;
+    color: aliceblue;
+    align-items: first baseline;
+
+}
+
+/* synet */
+
+#synet{
+    margin: auto;
+    width: 60%;
+    display: none;
+}
+
+#synet > :first-child{
+    background-color: wheat;
+    border: none;
+    
+}
+
+#synet .gsc-results-wrapper-overlay{
+    padding: 5px;
+    height: 70%;
+    top: 15%;
+}
+
+#synet .gsc-modal-background-image {
+    background: none;
+}
+
+#synet .gsc-results-close-btn-visible{
+    display: none;
+}
+
+/* elementos gerais * /
+
+/* --barra de rolagem */
+
+::-webkit-scrollbar{
+    opacity: 0; 
+}
